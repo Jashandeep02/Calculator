@@ -3,7 +3,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: lightgreen;
+  background: #e3f9ff;
   display:flex;
   flex-direction:column; 
   justify-content:center;
