@@ -24,8 +24,10 @@ document.onkeydown = function(event) {
     document.getElementById('display').value += key;
   } else if (key === '=') {
     calculate();
-  }
-  else if (key === 'C' || key === 'c'){
+  } else if (key === 'C' || key === 'c'){
     clearDisplay();
+  } else if(key === 'Backspace'){
+    var currentValue = document.getElementById('display').value;
+    document.getElementById('display').value = currentValue.slice(0, -1);
   }
 }
